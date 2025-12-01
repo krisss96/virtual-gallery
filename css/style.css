@@ -183,9 +183,15 @@ canvas {
     padding: 1.5em 1.5em;
     font-weight: bold;
     margin-top: 3rem;
-    margin-bottom: 1em;
+    margin-bottom: 2.4em;
     transition: all 0.4s;
+    font-size: 1.2em;
     cursor: pointer;
+}
+#play-button:hover {
+    background-color: #34495e;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 #menu #play_button:hover {
@@ -350,6 +356,7 @@ canvas {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 0.4em;
 }
 .item {
     display: flex;
@@ -362,7 +369,7 @@ canvas {
 
 .audio-controls {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 2em;
 
 }
 
@@ -374,8 +381,12 @@ canvas {
     background: none;
     border: none;
     text-decoration: underline;
+    font-size: 0.65em;
 }
-
+#start-audio:hover, #stop-audio:hover {
+    color: #34495e;
+    transform: scale(1.1);
+}
 
 #menu-button {
     display: block !important;
@@ -389,6 +400,17 @@ canvas {
     padding: 1.2em 1.2em;
     font-weight: bold;
     cursor: pointer;
+}
+#menu-button:hover {
+    background-color: #34495e;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.nav-title {
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+
 }
 
 body.menu-open #menu-button {
